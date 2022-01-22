@@ -1,0 +1,11 @@
+//- views/home.pug
+extends layout
+
+block content
+  h1 Home
+
+  p Welcome, #{ username }!
+
+  form(method="POST", action="/logout")
+    .form-group
+      button.btn.btn-primary(type="submit") Logout
